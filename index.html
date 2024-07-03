@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal website</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="profilepage">
+      <div class="navbar">
+        <div class="Navbar-toggle">
+          <i class="fas fa-bars"></i>
+        </div>
+        <nav class="navbar-links">
+          <ul>
+            <li>
+              <a href="https://hng.tech/learn" data-testid="hngLink"
+                >HNG Learn</a
+              >
+            </li>
+            <li>
+              <a href="https://keyword.dog" data-testid="keywordLink"
+                >Keyword Research</a
+              >
+            </li>
+            <li>
+              <a href="https://scrapeanyweb.site" data-testid="scrapeanywebLink"
+                >Web Scraping</a
+              >
+            </li>
+          </ul>
+        </nav>
+      </div>
+      <div class="container">
+        <section id="profile" class="profile-section">
+          <div class="main">
+            <div class="profiledetails">
+              <h1 data-testid="slackDisplayName">Femi Aina</h1>
+              <p data-testid="slackEmail">oluwafemiaina8@gmail.com</p>
+              <p>
+                <span data-testid="currentDay" id="currentDay"></span> .
+                <span data-testid="currentTimeUTC" id="currentTimeUTC"></span>
+              </p>
+            </div>
+          </div>
+          <div class="aside">
+            <img
+              src="images/profilepicture.jpg"
+              data-testid="slackProfilePicture"
+              alt="Slack profile picture"
+            />
+          </div>
+        </section>
+      </div>
+    </div>
+    <div>
+      <h2 class="goals">My Tech goals in the next two years</h2>
+      <div class="card-container">
+        <div class="card">
+          <div class="card-content">
+            <h3 class="heading">"To become a full stack developer"</h3>
+            <p class="heading-description">
+              I intend to become excellent at both front-end and back-end
+              development to become a full-stack developer in two years
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <h3 class="heading">"Obtain Certifications"</h3>
+            <p class="heading-description">
+              I intend to pursue relevant certifications in software engineering
+              to validate my skills and enhance my career prospects.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <h3 class="heading">"Contribute to Open Source"</h3>
+            <p class="heading-description">
+              I intend to start contributing to open-source projects to improve
+              my coding skills and give back to the community.
+            </p>
+          </div>
+        </div>
+        <div class="card">
+          <div class="card-content">
+            <h3 class="heading">"Improve Problem-Solving Skills"</h3>
+            <p class="heading-description">
+              I intend to focus on enhancing my problem-solving abilities
+              through coding challenges, algorithm practice, e.t.c.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>

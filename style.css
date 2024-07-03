@@ -1,0 +1,169 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Playfair Display", serif;
+}
+
+body {
+  background-color: #f6e4f8;
+}
+
+.navbar {
+  height: 60px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: right;
+  margin: auto;
+  padding: 16px;
+  background-color: #f0e4f1;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: black;
+  align-items: center;
+  text-align: center;
+  font-size: larger;
+}
+
+.navbar ul {
+  list-style-type: none;
+  display: flex;
+  overflow: hidden;
+}
+.navbar li {
+  float: right;
+  display: inline;
+  align-items: center;
+  margin-left: 40px;
+  margin-right: 20px;
+}
+
+.Navbar-toggle {
+  display: none;
+}
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: calc(100vh - 60px);
+  max-width: 1440px;
+  margin: 0 auto;
+  background: #f6e4f8;
+  margin-right: 30px;
+}
+
+.profile-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 20px;
+}
+
+.main {
+  flex: 1;
+}
+
+.profiledetails h1 {
+  font-size: 4em;
+}
+
+.profiledetails p {
+  font-size: 2em;
+}
+
+.aside {
+  flex: 1;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.aside img {
+  height: auto;
+  width: auto;
+}
+
+.card-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 20px;
+  height: calc(100vh - 60px);
+  overflow-y: auto;
+  align-items: center;
+}
+
+.card {
+  background-color: #edbef2;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 340px;
+  overflow: hidden;
+  text-align: center;
+  transition: transform 0.2s;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  height: 300px;
+  margin: 0px 10px;
+}
+
+.goals {
+  padding-top: 30px;
+  text-align: center;
+}
+.card-content {
+  flex: 1;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media only screen and (max-width: 768px) {
+  .navbar-links,
+  .navbar {
+    flex-direction: column;
+  }
+  .navbar-links {
+    display: none;
+  }
+
+  .Navbar__ToggleShow {
+    display: flex;
+  }
+
+  .Navbar-toggle {
+    align-self: flex-end;
+    display: initial;
+    position: absolute;
+    cursor: pointer;
+  }
+
+  .profile-section {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .aside {
+    order: -1;
+  }
+  .card-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card {
+    width: 80%;
+  }
+
+  .goals {
+    padding-bottom: 10px;
+    text-align: center;
+  }
+}
